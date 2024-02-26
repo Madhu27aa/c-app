@@ -112,11 +112,14 @@ function Checkout() {
             </div>
             <div className="flex justify-between pt-4 text-xl font-semibold">
               <h4>Total</h4>
+
               <h4>
                 <Currency quantity={basketTotal} currency="INR" />
               </h4>
             </div>
           </div>
+          <h3>Please wait you will be navigated to the payment gateway..</h3>
+          <h2>This may take a few seconds</h2>
           <Button
             noIcon
             loading={loading}

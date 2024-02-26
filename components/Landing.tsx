@@ -8,7 +8,7 @@ export default function Landing() {
       <div className="space-y-4 mt-4">
         <h1 className="space-y-3 text-5xl font-semibold tracking-wide lg:text-20xl xl:text-10xl leading">
           <span className="block bg-gradient-to-r from-pink-300 to-violet-300 bg-clip-text text-transparent">
-            The Dessert Stop
+            The Dessert Story
           </span>
           <span className="block">Taste the magic</span>
         </h1>

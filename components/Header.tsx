@@ -1,14 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  SearchIcon,
-  ShoppingBagIcon,
-  UserIcon,
-} from "@heroicons/react/outline";
+import { ShoppingBagIcon, UserIcon } from "@heroicons/react/outline";
 import { useSelector } from "react-redux";
 import { selectBasketItems } from "@/redux/basketSlice";
 import { signIn, signOut, useSession } from "next-auth/react";
+
 //cart items down near items.length
 
 export default function Header() {
@@ -21,7 +18,7 @@ export default function Header() {
         <Link href="/">
           <div className="relative h-10 w-20 cursor-pointer opacity-75 transition hover:opacity-100">
             <Image
-              src="/profile.jpeg"
+              src="/favicon.ico"
               layout="fill"
               alt=""
               objectFit="contain"
@@ -39,7 +36,6 @@ export default function Header() {
       </div>
 
       <div className="flex items-center justify-center gap-x-4 md:w-1/5">
-        <SearchIcon className="headerIcon" />
         <Link href="checkout">
           <div className="relative cursor-pointer">
             {items.length > 0 && (

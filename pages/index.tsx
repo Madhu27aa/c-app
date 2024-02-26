@@ -27,7 +27,7 @@ const Home = ({ categories, products }: Props) => {
   return (
     <div className="">
       <Head>
-        <title>The Dessert Stop</title>
+        <title>The Dessert Story</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
